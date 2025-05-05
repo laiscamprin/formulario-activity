@@ -1,0 +1,83 @@
+
+<!---Para executar os dois é necessário ter um executor, caso esse não esteja executando acesse apenas o login.php --->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+
+        body{
+            text-align:center;
+            font-family: Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
+            background-color:#ece7ff;
+        }
+        
+        label{
+            text-align:center;
+            display: block;
+            align-items:center;
+            padding:5px;
+        }
+        input{
+            align-items:center;
+            text-align:center;
+            border-radius: 8px;
+            width: 55%;
+            height:15px;
+        }
+        form{
+            align-items:center;
+            display: block;
+            text-align:center;
+        }
+
+        button{
+            align-items:center;
+            margin: 10px;    
+            background-color: #8ba9cd;
+            font-size: 15px;
+            width: 15%;
+            height: 30px;
+            border-radius: 8px;
+            font-family: Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
+        }
+
+        h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Login</h1>
+    <p>Olá, realize seu login para acessar nossos conteúdos!</p>
+    <form action="login.php" method="post">
+      
+        <label for="usuario">Usuário</label>
+        <input name="usuario" type="text" required>
+       
+
+        <br>
+
+        <label for="email">E-mail</label>
+        <input name="email" type="email" required>
+        
+
+        <br>
+
+        <label for="senha">Senha</label>
+        <input name="senha" type="password" required>
+       
+
+        <br>
+
+        <!-- Por fim, coloco o botão de validar os dados -->
+        <button type="submit">Enviar</button>
+    </form>
+
+   
+</body>
+</html>
